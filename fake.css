@@ -1,0 +1,315 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+
+body{
+     background-color: rgba(0, 12, 150, 0.662);
+      
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.main h1{
+    margin-top: 10px;
+    font-size: 5rem;
+    color: rgb(45, 120, 233);
+}
+.main h2{
+    margin-top: 10px;
+    font-size: 2.5rem;
+}
+
+.navbar{
+    width: 100vw;
+    height: 5rem;
+    /* border: 1px solid black; */
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(74, 142, 245);
+    position: fixed;
+    /* z-index: 2; */
+    
+    
+
+    
+
+
+}
+.logo{
+    width: 20%;
+    height: 4rem;
+    /* border: 1px solid black; */
+    margin-left: 40px;
+    background-image: url(logo\ \(1\).png);
+    background-size: 280px;
+    background-position: -20px -55px;
+    background-repeat: no-repeat;
+}
+
+
+
+.address{
+    height: 2rem;
+    width: 125px;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    background-color: rgba(149, 149, 149, 0.632);
+    border-radius: 10px;
+    
+}
+.address select{
+   height:2rem ;
+   width: 6rem;
+   border: none;
+   border-bottom-right-radius: 10px;
+   border-top-right-radius: 10px;
+
+
+}
+.searchbar{
+    height: 2.5rem;
+    width: 50%;
+    /* border: 1px solid black; */
+    margin-left: 40px;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+
+
+}
+.searchbar:hover{
+    outline: black solid 1.5px;
+}
+.searchbar i{
+    font-size: 25px;
+    margin-left: 10px;
+    
+}
+.searchbar input{
+    width: 80%;
+    height:2.5rem ;
+    border: none;
+    padding-left: 20px;
+    font-size: 20px;
+}
+.searchbar input:focus{
+    outline: none;
+}
+.searchbar button{
+    height: 2.5rem;
+    width: 103px;
+    border: none;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    font-size: 20px;
+}
+.searchbar button:active{
+    box-shadow: inset 0 0 2px 2px rgba(0, 0, 0, 0.265);
+}
+
+.id{
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    background-color: gray;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+    border: none;
+    
+}
+.id:active{
+    box-shadow: inset 0 0 2px 2px rgba(0, 0, 0, 0.365);
+}
+.cards{
+    width: 95vw;
+    margin-top: 6rem;
+    margin-bottom: 50px;
+    /* border: 1px solid black; */
+    display: grid;
+     grid-template-columns: auto auto auto;
+     justify-content: center;
+     gap: 30px;
+
+   
+
+}
+
+.card{
+   
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    padding: 10px;
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    transition: scale 0.2s;
+    box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.386);
+    
+    
+}
+
+.image{
+    height: 350px;
+    width: 340px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     
+     background-color: rgba(81, 165, 255, 0.724);
+     border-radius: 10px;
+    /* border: 1px solid black; */
+}
+
+.image img{
+transition: scale 0.2s;
+}
+.image img:hover{
+    
+ scale: calc(1.1);
+}
+
+#title{
+    align-self: flex-start;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    font-weight: 550;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(17, 187, 255);
+    
+}
+
+#description{
+    align-self: flex-start;
+    margin-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 18px;
+    font-weight: 450;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+
+#price{
+    font-size: 25px;
+    font-weight: 550;
+    color: rgb(23, 189, 255);
+    margin-top: 20px;
+    align-self: flex-start;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    
+}
+#price span{
+    margin-left: 200px;
+}
+
+footer{
+   width: 100vw;
+   height: 13rem;
+   background-color: rgb(62, 62, 62);
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   font-size: 30px;
+   
+   margin-bottom: 0;
+   
+}
+
+footer p{
+    margin-top: 10px;
+    color: white;
+}
+
+.detailsdiv{
+    height: 10rem;
+    width: 90%;
+    /* border: 1px solid black; */
+    display: flex;
+
+}
+.detailsdiv div{
+    height: 100%;
+    width: 20%;
+    /* border: 1px solid black; */
+}
+.belowlogo{
+    background-image: url(logo\ \(1\).png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.otherdetails{
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: flex-start;
+    
+    justify-content: space-around;
+    font-size: 20px;
+    
+}
+
+.otherdetails ul{
+    margin-top: 20px;
+    color: white;
+    margin-left: 100px;
+    line-height: 30px;
+}
+
+.otherdetails textarea{
+    height: 5rem;
+    width: 400px;
+
+    
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.539);
+    resize: none;
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 450;
+}
+
+.otherdetails textarea:focus{
+    outline: none;
+}
+
+.otherdetails button{
+    width: 4rem;
+    height: 2rem;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    color: rgb(29, 82, 255);
+    margin-top: 20px;
+   
+}
+
+.otherdetails button:hover{
+    box-shadow: 0 0 2px 2px rgba(76, 174, 255, 0.689);
+}
+.otherdetails button:active{
+    box-shadow: none;
+}
+
+
+

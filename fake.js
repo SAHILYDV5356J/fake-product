@@ -1,0 +1,79 @@
+const loader= document.querySelector("#loader");
+const cards= document.querySelector(".cards");
+const submit= document.querySelector("#submitbutton");
+const feedback=document.querySelector("#feedback");
+
+
+submit.addEventListener("click", function(event){
+    // event.preventDefault();
+    feedback.value="";
+    alert("your feedback is submited");
+    
+
+})
+async function makedivs(){
+
+    try{
+    const data= await fetch("https://fakestoreapi.com/products");
+
+    if(!data.ok){
+        throw new Error("API FAiled");
+
+    }
+    else{
+        loader.style.display="none";
+    }
+
+    var value= await data.json();
+
+    
+    // console.log(value);
+
+    
+
+    value.forEach((newcard)=> {
+
+
+        let randomstar=Math.floor(Math.random() * (5 - 3 +1)) + 3
+
+        const card= document.createElement("div");
+        card.setAttribute("class","card");
+         
+        // console.log(newcard.image)
+        card.innerHTML= ` <p id="title">${newcard.title}</p>
+        <div class="image">
+        <img src="${newcard.image}" alt=""  width="200px" ></img>
+        </div> 
+
+       
+        <p id="description">${newcard.description.slice(0,100)}....</p>
+
+        <p id="price">${Math.floor((newcard.price)*89)} ₹ 
+           <span><i class="fa-solid fa-star" style="color: #00e09d;"></i>${randomstar}</span>
+        </p>
+        
+        `
+
+
+
+
+        cards.appendChild(card)
+
+
+
+        
+    });
+
+
+}catch(err){
+
+    console.log(err.message);
+    loader.innerText="NO DATA FOUND"
+    loader.style.color="red";
+
+}
+    
+}
+makedivs();
+makedivs();
+
