@@ -13,10 +13,10 @@ body{
 .main{
     justify-self: center;
     width: 100vw;
-    /* display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
-   */
+  
 
 }
 
@@ -350,6 +350,15 @@ footer p{
     grid-template-columns: repeat(2, 50%);
         
 }
+.logo{
+    width: 50%;
+   
+    background-size: 220px;
+    background-position: -20px -40px;
+    background-repeat: no-repeat;
+    margin-left: 20px;
+}
+
 
 .searchbar{
     display: none;
@@ -360,7 +369,7 @@ footer p{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 15rem;
+    
    
     
 }
