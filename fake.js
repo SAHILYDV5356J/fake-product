@@ -2,6 +2,26 @@ const loader= document.querySelector("#loader");
 const cards= document.querySelector(".cards");
 const submit= document.querySelector("#submitbutton");
 const feedback=document.querySelector("#feedback");
+const searchicon=document.querySelector("#searchiconformobile");
+const phonesearch= document.querySelector("#phonesearch");
+const closesearch=document.querySelector("#closesearch");
+
+
+
+searchicon.addEventListener("click",function(){
+
+    phonesearch.style.marginTop="5rem";
+    cards.style.marginTop="0";
+
+});
+
+closesearch.addEventListener("click",function(){
+    phonesearch.style.marginTop="0";
+    cards.style.marginTop="4rem";
+
+
+})
+
 
 
 submit.addEventListener("click", function(event){

@@ -47,6 +47,13 @@ body{
 
 
 }
+#searchiconformobile{
+    display: none;
+}
+#phonesearch{
+    display: none;
+   
+}
 .logo{
     width: 20%;
     height: 4rem;
@@ -144,7 +151,7 @@ body{
 .cards{
     
     width: 95%;
-    margin-top: 6rem;
+    margin-top: 4rem;
     margin-bottom: 50px;
     /* border: 1px solid black; */
     display: grid;
@@ -344,14 +351,14 @@ footer p{
     
     gap: 1px;
     padding: 0;
-   
+    
     /* border: 1px solid black; */
     width: 100%;
     grid-template-columns: repeat(2, 50%);
         
 }
 .logo{
-    width: 50%;
+    width: 70%;
    
     background-size: 220px;
     background-position: -20px -40px;
@@ -363,8 +370,84 @@ footer p{
 .searchbar{
     display: none;
 }
+
+#searchiconformobile{
+    display: block;
+    color: white;
+    /* margin-left: 40%; */
+    font-size: 20px;
+}
+
+
+
+#phonesearch{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 5rem; */
+    height: 3rem;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.144);
+    
+}
+
+
+
+.mobsearch{
+    height: 2rem;
+    width: 80%;
+   
+   
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+
+
+}
+.mobsearch:hover{
+    outline: black solid 1.5px;
+}
+.mobsearch i{
+    font-size: 15px;
+    margin-left: 10px;
+    
+}
+.mobsearch input{
+    width: 80%;
+    height:100% ;
+    border: none;
+    padding-left: 20px;
+    font-size: 15px;
+}
+.mobsearch input:focus{
+    outline: none;
+}
+.mobsearch button{
+    height: 100%;
+    width: 25%;
+    border: none;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    font-size: 13px;
+}
+.mobsearch button:active{
+    box-shadow: inset 0 0 2px 2px rgba(0, 0, 0, 0.265);
+}
+
+#closesearch{
+
+    background-color: transparent;
+    border: none;
+    margin-left:5px;
+
+}
+
+
 .id{
    
+    margin-left: 25px;
+    margin-right: 20px;
     font-size: 25px;
     display: flex;
     justify-content: center;
