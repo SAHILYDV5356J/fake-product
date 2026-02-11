@@ -5,7 +5,8 @@ const feedback=document.querySelector("#feedback");
 const searchicon=document.querySelector("#searchiconformobile");
 const phonesearch= document.querySelector("#phonesearch");
 const closesearch=document.querySelector("#closesearch");
-
+const input=document.querySelector("#input");
+const clear=document.querySelector("#clear");
 
 
 searchicon.addEventListener("click",function(){
@@ -22,6 +23,10 @@ closesearch.addEventListener("click",function(){
 
 })
 
+clear.addEventListener("click",function(){
+    input.value="";
+   
+})
 
 
 submit.addEventListener("click", function(event){
