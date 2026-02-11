@@ -347,7 +347,7 @@ footer p{
    
     /* border: 1px solid black; */
     width: 100%;
-    grid-template-columns: repeat(2, 48%);
+    grid-template-columns: repeat(2, 50%);
         
 }
 
