@@ -392,7 +392,8 @@ footer p{
     /* margin-top: 5rem; */
     height: 3rem;
     width: 100vw;
-    background-color: rgba(0, 0, 0, 0.144);
+    background-color: rgba(0, 0, 0, 0.299);
+    position: fixed;
     
 }
 
