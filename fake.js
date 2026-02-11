@@ -12,13 +12,15 @@ const clear=document.querySelector("#clear");
 searchicon.addEventListener("click",function(){
 
     phonesearch.style.marginTop="5rem";
-    cards.style.marginTop="0";
+    cards.style.marginTop="8rem";
+    phonesearch.style.zIndex="0"
 
 });
 
 closesearch.addEventListener("click",function(){
     phonesearch.style.marginTop="0";
     cards.style.marginTop="4rem";
+    phonesearch.style.zIndex=-2;
 
 
 })
