@@ -21,7 +21,7 @@ body{
 }
 
 .main h2{
-    margin-top: 10rem;
+    margin-top: 12rem;
    text-align: center;
     
     
@@ -351,6 +351,20 @@ footer p{
         
 }
 
+.searchbar{
+    display: none;
+}
+.id{
+   
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15rem;
+   
+    
+}
+
 .card{
    
     /* border: 1px solid black; */
@@ -388,6 +402,9 @@ footer{
    flex-direction: column;
    align-items: flex-start;
    font-size: 20px;
+
+   position: relative;
+   top: 200px;
    
    
    
