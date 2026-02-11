@@ -40,13 +40,13 @@ async function makedivs(){
         card.setAttribute("class","card");
          
         // console.log(newcard.image)
-        card.innerHTML= ` <p id="title">${newcard.title}</p>
+        card.innerHTML= ` <p id="title">${newcard.title.slice(0,25)}</p>
         <div class="image">
-        <img src="${newcard.image}" alt=""  width="200px" ></img>
+        <img src="${newcard.image}" alt=""   ></img>
         </div> 
 
        
-        <p id="description">${newcard.description.slice(0,100)}....</p>
+        <p id="description">${newcard.description.slice(0,50)}....</p>
 
         <p id="price">${Math.floor((newcard.price)*89)} ₹ 
            <span><i class="fa-solid fa-star" style="color: #00e09d;"></i>${randomstar}</span>
