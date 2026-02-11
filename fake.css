@@ -383,6 +383,9 @@ footer p{
     
     
 }
+.image{
+    height: 10rem;
+}
 
 .address{
     display: none;
