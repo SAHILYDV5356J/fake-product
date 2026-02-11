@@ -393,6 +393,7 @@ footer p{
 
 
 
+
 .mobsearch{
     height: 2rem;
     width: 80%;
@@ -408,6 +409,7 @@ footer p{
 .mobsearch:hover{
     outline: black solid 1.5px;
 }
+
 .mobsearch i{
     font-size: 15px;
     margin-left: 10px;
@@ -423,17 +425,7 @@ footer p{
 .mobsearch input:focus{
     outline: none;
 }
-.mobsearch button{
-    height: 100%;
-    width: 25%;
-    border: none;
-    border-bottom-right-radius: 20px;
-    border-top-right-radius: 20px;
-    font-size: 13px;
-}
-.mobsearch button:active{
-    box-shadow: inset 0 0 2px 2px rgba(0, 0, 0, 0.265);
-}
+
 
 #closesearch{
 
