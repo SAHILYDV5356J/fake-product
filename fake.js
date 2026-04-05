@@ -95,7 +95,7 @@ async function makedivs(){
 }catch(err){
 
     console.log(err.message);
-    loader.innerText="NO DATA FOUND"
+    loader.innerText="No Data Found or API not working"
     loader.style.color="red";
 
 }
